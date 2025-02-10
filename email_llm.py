@@ -28,28 +28,3 @@ def send_email_to_user(semail,password,remail,subject,body):
         print("Email is successfully sent")
     except smtplib.SMTPAuthenticationError as e:
         print("SMTP Authentication Error:", e)
-
-body='''
-Dear Ravi,
-
-We acknowledge receipt of your resignation letter dated [insert date], informing us of your decision to leave your position as [insert position] with the company, effective [insert last working day].
-
-We understand that this decision was not made lightly, and we appreciate the contributions you have made during your time with us.
-
-As we move forward with the transition process, please ensure the following steps are completed:
-1. Return all company property, including your ID card, laptop, and any other company materials, to the HR department by your last working day.
-2. Complete the exit interview, which will be scheduled by HR shortly.
-3. Ensure a smooth handover of your responsibilities to your team.
-
-If you have any questions or require assistance during this transition, please do not hesitate to reach out to the HR team.
-
-Thank you once again for your service, and we wish you the very best in your future endeavors.
-
-Best regards,
-[Your Name]
-[Your Position]
-HR Department
-[Company Name]
-[Contact Information]
-'''
-
